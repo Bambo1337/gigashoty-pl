@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Czarne tło */
+}
+
+header {
+    background-color: #1a1a1a; /* Ciemnoszare tło nagłówka */
+    color: #FFC700; /* Żółty tekst nawiązujący do loga */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #FFC700; /* Żółte linki */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Jaśniejszy żółty na hover */
+}
+
+.main-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1a1a1a; /* Ciemnoszare tło sekcji głównej */
+    color: #FFC700; /* Żółty tekst */
+}
+
+.main-section h1 {
+    font-size: 40px;
+    color: #FFC700; /* Żółty nagłówek */
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons .btn {
+    background-color: #FFD700; /* Złoty kolor przycisków */
+    color: #000; /* Czarne napisy na przyciskach */
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+#videos {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #1a1a1a; /* Ciemnoszare tło sekcji filmów */
+    color: #FFC700; /* Żółty tekst */
+}
+
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.video-item {
+    margin: 20px;
+}
+
+#contact {
+    background-color: #222; /* Ciemne tło kontaktu */
+    color: #FFC700; /* Żółty tekst */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact label, #contact input, #contact textarea, #contact button {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+footer {
+    background-color: #000; /* Czarne tło stopki */
+    color: #FFC700; /* Żółty tekst w stopce */
+    text-align: center;
+    padding: 20px;
+}
+
+.social-links img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.tiktok-embed {
+    margin: 20px auto;
+    max-width: 300px; /* Dopasuj do YouTube video */
+    height: auto;
+}
+
+#comments {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #FFC700;
+}
+
+.comment-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.comment-form button {
+    background-color: #FFD700;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.comment-list p {
+    margin: 10px 0;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.social-links img {
+    width: 50px;
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.1); /* Powiększenie ikon przy najechaniu */
+}
+
+.main-section h1 {
+    font-size: 40px;
+    color: #FFC700;
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#popular-shots, #new-releases, #instagram-feed {
+    transition: transform 0.3s ease;
+}
+
+#popular-shots:hover, #new-releases:hover, #instagram-feed:hover {
+    transform: scale(1.02);
+}
